@@ -4,7 +4,7 @@
 
 // there needs to be a way to start a random number genterator to start spitting out lat lng cordinates within a range that uses the geolocation point as it's center
 
-// those cordinates are then checked with the following if else statement to see if the are within the polygon the user draws
+// those cordinates are then checked with the following if else statement to see if they are within the polygon the user draws
 
 
 

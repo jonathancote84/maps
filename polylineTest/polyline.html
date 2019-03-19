@@ -6,23 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>polyline test</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
    
-<script src="index.js"></script>
 </head>
 <body>
-    <div id="floating-panel">
+    <!-- <div id="floating-panel">
         <b>Mode of Travel: </b>
         <option value="DRIVING">Driving</option>
         <option value="WALKING">Walking</option>
         <option value="BICYCLING">Bicycling</option>
         <option value="TRANSIT">Transit</option>
+    </div> -->
+
+    <div class="container">
+        <button type="button" class="button hidden" id="get-lost-button">get lost</button>
     </div>
-    <h2>drawing shapes = polylines and polygons</h2>
+    
     <div id="map"></div>
-    <div id="info"></div>
+    <div id="info"></div> 
+    
 </body>
  <script type="text/javascript"
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOHY6JDVR4Rz2K3rengcAB_fiLwEzyiik&libraries=drawing&callback=initMap"></script>
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOHY6JDVR4Rz2K3rengcAB_fiLwEzyiik&libraries=drawing,geometry"></script>
+<script src="index.js"></script>
+
 
 
 </html>

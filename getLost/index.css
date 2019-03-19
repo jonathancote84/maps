@@ -1,0 +1,157 @@
+
+
+body { 
+    background: url('scaledbacksplash.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #ffffff;
+    
+  }
+
+/* styling for text */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    flex-direction: column;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    color: rgb(100, 100, 100);
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+h2 {
+    color:rgb(100, 100, 100);
+}
+/* height of map needs to be specified as div defaults at 0% */
+#map {
+    height: 100%;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+#get-lost-button{
+    margin-left: auto;
+    margin-right: auto;
+ 
+    }
+  .draw-border {
+    box-shadow: inset 0 0 0 4px #007682;
+    color: #089aaa;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  .draw-border:hover {
+    color: #E1762B;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #E1762B;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+  }
+  .btn:focus {
+    outline: 2px dotted #05a0b1;
+  }
+
+  .hidden{
+      display: none;
+
+  }
+
+  /* direction panel styling */
+  #right-panel {
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+  }
+
+  #right-panel select, #right-panel input {
+    font-size: 15px;
+  }
+
+  #right-panel select {
+    width: 100%;
+  }
+
+  #right-panel i {
+    font-size: 12px;
+  }
+  #right-panel {
+    height: 100%;
+    float: right;
+    width: 30%;
+    overflow: auto;
+  }
+
+
+  /* some printable media query */
+  @media print {
+    #map {
+      height: 500px;
+      margin: 0;
+    }
+    #right-panel {
+      float: none;
+      width: auto;
+    }
+  } 
+  
+  #floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+  }
